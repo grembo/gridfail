@@ -26,11 +26,8 @@ run: kill all
 	@icegridadmin --Ice.Config=config.admin -e "application add app.xml"
 	@sleep 2
 	@echo "Starting app"
-	icegridadmin --Ice.Config=config.admin -e "server start DemoBox"
+	@icegridadmin --Ice.Config=config.admin -e "server start DemoBox"
 	@sleep 2
-#	@echo "Updating app - fails"
-#	@-icegridadmin --Ice.Config=config.admin -e "application update --no-restart app2.xml"
-#	@sleep 2
 	@echo "Updating app - succeeds and stops it"
 	@icegridadmin --Ice.Config=config.admin -e "application update app2.xml"
 	@sleep 2
@@ -51,5 +48,5 @@ kill:
 
 clean: kill
 	@echo "Remove all generated files and registry/node data"
-	@rm -f Demo.h Demo.cpp libDemoService.so *~
+	@rm -f Demo.h Demo.cpp libDemoService.so *~ *.log
 	@rm -rf dbregistry1 dbregistry2 dbnode

@@ -6,6 +6,7 @@ Ice.ProgramName=icegridregistry1
 
 IceGrid.InstanceName=DemoGrid
 IceGrid.Registry.AdminPermissionsVerifier=DemoGrid/NullPermissionsVerifier
+Ice.Default.Locator=DemoGrid/Locator:default -p 4062:default -p 14062
 
 IceGrid.Registry.Client.Endpoints=default -p 4062 -t 10000
 IceGrid.Registry.Server.Endpoints=default -p 4063 -t 10000
@@ -15,12 +16,12 @@ IceGrid.Registry.Data=dbregistry1
 
 IceGrid.Registry.Discovery.Enabled=0
 
-IceGrid.Registry.Trace.Adapter=1
-IceGrid.Registry.Trace.Application=1
-IceGrid.Registry.Trace.Locator=1
-IceGrid.Registry.Trace.Node=1
-IceGrid.Registry.Trace.Object=1
-IceGrid.Registry.Trace.Patch=1
-IceGrid.Registry.Trace.Replica=1
-IceGrid.Registry.Trace.Server=1
-IceGrid.Registry.Trace.Session=1
+#IceGrid.Registry.Trace.Adapter=2
+#IceGrid.Registry.Trace.Application=2
+#IceGrid.Registry.Trace.Locator=2
+#IceGrid.Registry.Trace.Node=2
+#IceGrid.Registry.Trace.Object=2
+#IceGrid.Registry.Trace.Patch=2
+#IceGrid.Registry.Trace.Replica=2
+#IceGrid.Registry.Trace.Server=2
+#IceGrid.Registry.Trace.Session=2

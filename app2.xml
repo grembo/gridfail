@@ -3,14 +3,22 @@
     <node name="DemoNode">
       <icebox id="DemoBox" exe="/usr/local/bin/icebox" activation="on-demand">
         <properties>
-          <property name="IceBox.UseSharedCommunicator.ServiceA" value="1"/>
-          <property name="IceBox.UseSharedCommunicator.ServiceB" value="1"/>
+          <property name="Ice.Default.Protocol" value="tcp"/>
+          <property name="Ice.Default.Host" value="127.0.0.1"/>
         </properties>
         <env>LD_LIBRARY_PATH=./</env>
         <service name="ServiceA" entry="DemoService:create">
+           <properties>
+             <property name="Ice.Default.Protocol" value="tcp"/>
+             <property name="Ice.Default.Host" value="127.0.0.1"/>
+           </properties>
            <adapter name="ServiceA" id="ServiceA"/>
         </service>
         <service name="ServiceB" entry="DemoService:create">
+           <properties>
+             <property name="Ice.Default.Protocol" value="tcp"/>
+             <property name="Ice.Default.Host" value="127.0.0.1"/>
+           </properties>
            <adapter name="ServiceB" id="ServiceB"/>
         </service>
       </icebox>

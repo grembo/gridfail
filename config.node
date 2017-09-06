@@ -6,5 +6,8 @@ IceGrid.Node.Name=DemoNode
 IceGrid.Node.Endpoints=default -p 10000 -t 10000
 IceGrid.Node.Data=dbnode
 
-IceGrid.Node.Trace.Server=2
-IceGrid.Node.Trace.Activator=2
+#IceGrid.Node.Trace.Activator=2
+#IceGrid.Node.Trace.Adapter=2
+#IceGrid.Node.Trace.Patch=2
+#IceGrid.Node.Trace.Replica=2
+#IceGrid.Node.Trace.Server=2

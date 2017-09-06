@@ -31,12 +31,6 @@ Starting node
 Remove app (in case it exists)
 Installing app
 Starting app
-icegridadmin --Ice.Config=config.admin -e "server start DemoBox"
-Updating app - fails
-error: IceGrid::DeploymentException:
-check for application `DemoApp' update failed:
-the server `DemoBox' would need to be stopped
-*** Error code 1 (ignored)
 Updating app - succeeds and stops it
 Starting and stopping app until it uses replicant registry and fails
 Start...

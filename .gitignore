@@ -5,3 +5,4 @@ dbregistry2
 dbnode
 libDemoService.so
 *~
+*.log
