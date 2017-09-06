@@ -1,0 +1,6 @@
+Ice.Default.Host=127.0.0.1
+Ice.Default.Protocol=tcp
+Ice.Default.Locator=DemoGrid/Locator:default -p 4062 -t 10000
+
+IceGridAdmin.Username=dummy
+IceGridAdmin.Password=dummy

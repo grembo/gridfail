@@ -1,0 +1,7 @@
+Ice.Default.Host=127.0.0.1
+Ice.Default.Protocol=tcp
+Ice.Default.Locator=DemoGrid/Locator:default -p 4062 -t 10000:default -p 14062 -t 10000
+
+IceGrid.Node.Name=DemoNode
+IceGrid.Node.Endpoints=default -p 10000 -t 10000
+IceGrid.Node.Data=dbnode

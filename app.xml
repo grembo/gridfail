@@ -1,0 +1,15 @@
+<icegrid>
+  <application name="DemoApp">
+    <node name="DemoNode">
+      <icebox id="DemoBox" exe="/usr/local/bin/icebox" activation="on-demand">
+        <properties>
+          <property name="IceBox.UseSharedCommunicator.ServiceA" value="1"/>
+        </properties>
+        <env>LD_LIBRARY_PATH=./</env>
+        <service name="ServiceA" entry="DemoService:create">
+           <adapter name="ServiceA" id="ServiceA"/>
+        </service>
+      </icebox>
+    </node>
+  </application>
+</icegrid>
