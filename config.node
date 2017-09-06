@@ -5,3 +5,6 @@ Ice.Default.Locator=DemoGrid/Locator:default -p 4062 -t 10000:default -p 14062 -
 IceGrid.Node.Name=DemoNode
 IceGrid.Node.Endpoints=default -p 10000 -t 10000
 IceGrid.Node.Data=dbnode
+
+IceGrid.Node.Trace.Server=2
+IceGrid.Node.Trace.Activator=2

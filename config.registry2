@@ -2,6 +2,8 @@ Ice.Default.Host=127.0.0.1
 Ice.IPv6=0
 Ice.Default.Protocol=tcp
 
+Ice.ProgramName=icegridregistry2
+
 IceGrid.InstanceName=DemoGrid
 IceGrid.Registry.AdminPermissionsVerifier=DemoGrid/NullPermissionsVerifier
 
@@ -15,3 +17,14 @@ IceGrid.Registry.Internal.Endpoints=default -p 14064 -t 10000
 IceGrid.Registry.Data=dbregistry2
 
 IceGrid.Registry.Discovery.Enabled=0
+
+IceGrid.Registry.Trace.Adapter=1
+IceGrid.Registry.Trace.Application=1
+IceGrid.Registry.Trace.Locator=1
+IceGrid.Registry.Trace.Node=1
+IceGrid.Registry.Trace.Object=1
+IceGrid.Registry.Trace.Patch=1
+IceGrid.Registry.Trace.Replica=1
+IceGrid.Registry.Trace.Server=1
+IceGrid.Registry.Trace.Session=1
+

@@ -1,8 +1,9 @@
 icegrid replication problem
 ===========================
 
-When updating an icebox configuration using icegridadmin --no-restart,
-the updated replication definition won't propagate properly.
+When adding a service to an icebox configuration using
+icegridadmin, the updated replication definition won't propagate properly
+until the icegridnode restarts.
 
 This has been tested on ice 3.6.3.
 

@@ -28,9 +28,9 @@ run: kill all
 	@echo "Starting app"
 	icegridadmin --Ice.Config=config.admin -e "server start DemoBox"
 	@sleep 2
-	@echo "Updating app - fails"
-	@-icegridadmin --Ice.Config=config.admin -e "application update --no-restart app2.xml"
-	@sleep 2
+#	@echo "Updating app - fails"
+#	@-icegridadmin --Ice.Config=config.admin -e "application update --no-restart app2.xml"
+#	@sleep 2
 	@echo "Updating app - succeeds and stops it"
 	@icegridadmin --Ice.Config=config.admin -e "application update app2.xml"
 	@sleep 2
