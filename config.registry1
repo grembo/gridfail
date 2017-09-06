@@ -1,0 +1,14 @@
+Ice.Default.Host=127.0.0.1
+Ice.IPv6=0
+Ice.Default.Protocol=tcp
+
+IceGrid.InstanceName=DemoGrid
+IceGrid.Registry.AdminPermissionsVerifier=DemoGrid/NullPermissionsVerifier
+
+IceGrid.Registry.Client.Endpoints=default -p 4062 -t 10000
+IceGrid.Registry.Server.Endpoints=default -p 4063 -t 10000
+IceGrid.Registry.Internal.Endpoints=default -p 4064 -t 10000
+
+IceGrid.Registry.Data=dbregistry1
+
+IceGrid.Registry.Discovery.Enabled=0
